@@ -7,8 +7,8 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
-  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+  url       = env("postgresql://spliwise_user:gxKVpu0YIX7YkXUyYieJ1ix77fyDo92C@dpg-cqjvhdggph6c739faung-a.oregon-postgres.render.com/spliwise") // uses connection pooling
+  directUrl = env("postgresql://spliwise_user:gxKVpu0YIX7YkXUyYieJ1ix77fyDo92C@dpg-cqjvhdggph6c739faung-a.oregon-postgres.render.com/spliwise") // uses a direct connection
 }
 
 model Group {
